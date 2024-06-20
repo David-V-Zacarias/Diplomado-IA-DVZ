@@ -1,5 +1,5 @@
 # Solicitar entradas
-num = float(input('Introduce el número: '))
+num = int(input('Introduce el número: '))
 
 # Código
 if num % 2 == 0:
