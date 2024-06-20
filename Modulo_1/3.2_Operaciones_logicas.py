@@ -25,7 +25,7 @@ todos_positivos = num1>0 and num2>0 and num3>0
 
 al_menos_un_negativo = num1<0 or num2<0 or num3< 0
 
-orden = num1>num2 and num2>0
+orden = num1>num2 and num2>num3
 # -------------------------------------------------------------------
 
 
