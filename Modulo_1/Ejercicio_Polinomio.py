@@ -8,7 +8,7 @@ def resolver_polinomio_cuadratico():
     if d > 0:
         r1 = (-b + d**0.5) / (2 * a)
         r2 = (-b - d**0.5) / (2 * a)
-        return raiz1, raiz2
+        return r1, r2
     
     elif d == 0:
         raiz = -b / (2 * a)
