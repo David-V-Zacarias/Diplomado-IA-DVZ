@@ -1,25 +1,26 @@
-def resolver_polinomio_cuadratico(a, b, c):
-    discriminante = b**2 - 4 * a * c
-
-    if discriminante > 0:
-        raiz1 = (-b + discriminante**0.5) / (2 * a)
-        raiz2 = (-b - discriminante**0.5) / (2 * a)
+def resolver_polinomio_cuadratico():
+    a = float(input("Ingrese el coeficiente a: "))
+    b = float(input("Ingrese el coeficiente b: "))
+    c = float(input("Ingrese el coeficiente c: "))
+    
+    d = b**2 - 4 * a * c
+    
+    if d > 0:
+        r1 = (-b + d**0.5) / (2 * a)
+        r2 = (-b - d**0.5) / (2 * a)
         return raiz1, raiz2
     
-    elif discriminante == 0:
+    elif d == 0:
         raiz = -b / (2 * a)
         return raiz, raiz
     
     else:
         parte_real = -b / (2 * a)
-        parte_imaginaria = (-discriminante)**0.5 / (2 * a)
-        raiz1 = complex(parte_real, parte_imaginaria)
-        raiz2 = complex(parte_real, -parte_imaginaria)
-        return raiz1, raiz2
-    
-a = 1
-b = -3
-c = 2
+        parte_imaginaria = (-d)**0.5 / (2 * a)
+        r1 = complex(parte_real, parte_imaginaria)
+        r2 = complex(parte_real, -parte_imaginaria)
+        return r1, r2
 
-raiz1, raiz2 = resolver_polinomio_cuadratico(a, b, c)
-print("Las raíces del polinomio son:", raiz1, "y", raiz2)
+r1, r2 = resolver_polinomio_cuadratico()
+print("Las raíces del polinomio son:", r1, "y", r2)
+
