@@ -1,3 +1,3 @@
 # Ciencia de datos e inteligencia artificial en agricultura
 
-## Modulo 1
+## Módulos 1 y 3
